@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
-  filter: invert(1);
+  color: white;
+  background-color: black;
+
+  a { 
+    color: cyan;
+  }
+
   img {
     filter: invert(1);
 
     &.ioda { filter: invert(0); }
+  }
+
+  code {
+    background-color: white;
+    color: black;
+    font-family: 'Space Mono', monospace;
   }
 }
 
@@ -25,8 +39,8 @@ html { height: 100%; }
 
 body {
   color: black;
-  font-family: monospace;
-  font-size: 1.3rem;
+  font-family: "Space Mono";
+  font-size: 1.2rem;
   line-height: 1.3;
   margin: 0;
   min-height: 100%;
@@ -40,7 +54,7 @@ p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
 
-*:target { background-color: yellow; }
+*:target { background-color: crimson; }
 
 .w {
   max-width: 640px;
